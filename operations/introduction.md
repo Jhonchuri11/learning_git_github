@@ -22,7 +22,6 @@ git checkout HEAD <filename>
 git checkout -- . 
 
 ```
-```
 ## 3. more : Agregar Múltiples Archivos al Área de Preparación
 
 Si decides agregar multiples archivos, puedes usar:
@@ -36,7 +35,7 @@ Comando:
 ```bash
 git add <filename_1> <filename_2>
 git add .
-```
+
 ```
 
 ## 4. reset : Restablecer Archivos en el Área de Preparación (Parte I)
@@ -51,8 +50,6 @@ Comando:
 **Comando:**
 ```bash
 git reset HEAD <filename>
-
-```
 
 ```
 
