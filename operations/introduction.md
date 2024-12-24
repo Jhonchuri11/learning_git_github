@@ -66,7 +66,7 @@ Comando:
 ```bash
 git reset <commit_SHA>
 
-**Example:**
+Example:
 
 Si el SHA de tu commit anterior es 5d692065cf51a2f50ea8e7b19b5a7ae512f633ba, usa:
 
