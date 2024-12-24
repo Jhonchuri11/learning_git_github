@@ -1,0 +1,36 @@
+# PARA PODER ENTENDER UN POCO EL FUNCIONAMIENTO DE REST
+
+1. Eliminar una línea en scene-2.txt:
+
+ - Comenzaste eliminando una línea del archivo scene-2.txt para simular un error.
+
+2. Agregar a la zona de preparación: 
+
+ - Usaste el comando git add scene-2.txt para mover el archivo modificado a la zona de preparación (staging area).
+
+3. Verificar el estado del repositorio: 
+
+ - Ejecutaste git status para ver el estado del repositorio.
+
+ - Observaste que scene-2.txt estaba en la lista de “Changes to be committed”.
+
+4. Despreparar el archivo: 
+
+ - Usaste git reset HEAD scene-2.txt para quitar scene-2.txt de la zona de preparación, manteniendo los cambios en el directorio de trabajo.
+
+5. Hacer un commit: 
+
+ - Finalmente, realizaste un commit con git commit -m "update file" para guardar los cambios en otros   archivos (scene-3.txt y scene-7.txt) en el historial de Git, sin incluir scene-2.txt.
+
+
+# DETALLE LOGIC RESET
+
+<> Antes de reiniciar :
+
+- HEAD está en la confirmación más reciente.
+
+<> Después de reiniciar :
+
+- HEAD va a un commit previamente realizado de su elección.
+- Los commits grises ya no son parte de tu proyecto
+- En esencia, has rebobinado la historia del proyecto.

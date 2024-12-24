@@ -1,0 +1,83 @@
+// STASH 
+
+Para ir a una rama diferente, uno siempre debe estar en un punto de 
+confirmación limpio. En este caso, no quieres confirmar tu código
+experimental ya que no está listo, pero tampoco quieres perder todo 
+el código en el que has estado trabajando.
+
+Una buena forma de manejar esto es usar git stash, lo que le permite volver
+a un punto de confirmación limpio con un árbol de trabajo sincronizado y 
+evitar perder sus cambios locales en el proceso
+
+COMMAND: 
+
+- git stash
+
+Al ejecutar el comando anterior se almacenará el trabajo temporalmente 
+para su uso posterior en un directorio oculto.
+
+En este punto, podemos cambiar de sucursal y realizar el trabajo en otro lugar.
+
+Una vez corregido el error, si deseamos recuperar el código en el que estaba trabajando 
+anteriormente, puede "extraer" el trabajo que se almacenó cuando utilizó git stash.
+
+COMMAND:
+
+-  git stash pop
+
+# <-- git log --oneline
+
+: muestra la lista de confirmaciones en formato de una línea.
+
+# <-- git log -S "keyword"
+
+: muestra una lista de confirmaciones en las que cambia la cantidad de apariciones 
+de la palabra clave dentro de al menos un archivo mediante adición, eliminación o modificación.
+
+# <-- git log -S "Add"
+
+:para buscar cualquier confirmación en la que cambie la cantidad de apariciones de "Agregar" 
+dentro de un archivo.
+
+# <-- git log --oneline --graph- --graph
+
+: Muestra una representación visual de cómo se crearon las ramas y las confirmaciones 
+para ayudarte a entender el historial de tu repositorio
+
+// Editar commit 
+
+La bandera de Git --amend es extremadamente útil al actualizar un commit, 
+te permite corregir errores y editar commits fácilmente en lugar de crear uno completamente nuevo.
+
+COMMAND:
+
+Para evitar crear una nueva, puedes crear tus cambios, prepararlos con:
+
+- git add
+
+- git commit --amend
+
+Sin embargo, si desea mantener el mismo mensaje de confirmación, simplemente puede agregar la bandera --no-edit:
+
+- git commit --amend --no-edit
+
+// COMANDOS DE ALIAS
+
+Afortunadamente, Git ofrece una característica útil que puede 
+hacer que tu experiencia con Git sea más sencilla, fácil y familiar: los alias.
+
+Si tienes un conjunto de comandos que usas regularmente y quieres 
+ahorrar tiempo al escribirlos, puedes configurar fácilmente un alias para cada 
+comando usando Git config.
+
+EXAMPLES:
+
+- git config --global alias.co "checkout"
+- git config --global alias.br "branch"
+-  git config --global alias.glop "log --pretty=format:"%h %s" --graph"
+
+Una vez configurados los alias, la próxima vez que quieras ir a otra rama puedes escribir el comando:
+
+- git co example_branch
+
+
