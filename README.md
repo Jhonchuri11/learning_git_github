@@ -16,7 +16,9 @@ Funciona registrando cambios, almacenándolos y permitiéndote consultarlos cuan
 ## 🔄 Git Workflow
 Un proyecto Git se compone de tres partes principales:
 
-<img src="https://github.com/Jhonchuri11/learning_git_github/blob/main/basic%20-%20workflow/workflow.png" alt="Git Workflow" width="600">
+<div align="center">
+  <img src="https://github.com/Jhonchuri11/learning_git_github/blob/main/basic%20-%20workflow/workflow.png" alt="Git Workflow" width="600">
+</div>
 
 1. **Directorio de trabajo**: Donde crearás, editarás, eliminarás y organizarás archivos.
 2. **Área de preparación (staging area)**: Donde se enumeran los cambios realizados en el directorio de trabajo.
