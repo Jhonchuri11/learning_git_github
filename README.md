@@ -34,3 +34,42 @@ Un proyecto Git se compone de tres partes principales:
 - **Uso**:  
   ```bash
   git init
+### 2️⃣ git status
+- **Descripción**: Muestra el estado del directorio de trabajo, el área de preparación y qué archivos están rastreados o no.  
+- **Uso**:  
+  ```bash
+  git status
+### 3️⃣ git add
+- **Descripción**: Agrega archivos al área de preparación para que Git los rastree.
+- **Uso**:  
+  ```bash
+  git add <filename>
+  git add scene-1.txt
+### 4️⃣ git diff
+- **Descripción**: Compara diferencias entre el directorio de trabajo y el área de preparación.
+- **Uso**:  
+  ```bash
+  git diff <filename>
+  git diff scene-1.txt
+### 5️⃣ git commit
+- **Descripción**: Guarda permanentemente los cambios del área de preparación dentro del repositorio.
+- **Convenciones para mensajes de confirmación**
+- Escribe el mensaje entre comillas.
+- Usa tiempo presente.
+- Sé breve (50 caracteres o menos).
+- **Uso**:  
+  ```bash
+  git commit -m "Mensaje de confirmación"
+  git commit -m "Complete first line of dialogue"
+### 6️⃣ git log
+- **Descripción**: Muestra un historial cronológico de las confirmaciones realizadas en el repositorio.
+- **Información proporcionada**
+- Código SHA (40 caracteres, identifica la confirmación).
+- Autor de la confirmación.
+- Fecha y hora de la confirmación.
+- Mensaje de confirmación.
+- **Uso**:  
+  ```bash
+  git log
+! Sigamos aprendiendo 😊 !
+
