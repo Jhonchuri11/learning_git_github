@@ -15,11 +15,13 @@ Descarta los cambios y vuelve al estado original de un archivo específico en el
 
 **Comando:**
 
+
 ```bash
 git checkout HEAD <filename>
 
 git checkout -- . 
 
+```
 ```
 ## 3. more : Agregar Múltiples Archivos al Área de Preparación
 
@@ -35,6 +37,7 @@ Comando:
 git add <filename_1> <filename_2>
 git add .
 ```
+```
 
 ## 4. reset : Restablecer Archivos en el Área de Preparación (Parte I)
 
@@ -48,6 +51,8 @@ Comando:
 **Comando:**
 ```bash
 git reset HEAD <filename>
+
+```
 
 ```
 
