@@ -1,0 +1,85 @@
+## EDUCATION : https://education.github.com/git-cheat-sheet-education.pdf
+
+# DEFINITION GIT
+
+- Git es un software que permite realizar un seguimiento de los cambios 
+realizados en un proyecto a lo largo del tiempo. Git funciona registrando 
+los cambios que se realizan en un proyecto, almacenando dichos cambios y 
+permitiéndote consultarlos cuando sea necesario.
+
+# FLUJO DE TRABAJO EN GIT :Un proyecto Git puede considerarse compuesto por tres partes:
+
+- Un directorio de trabajo : donde realizarás todo el trabajo: crear, editar, 
+eliminar y organizar archivos.
+
+- Un área de preparación : donde enumerarás los cambios que realices en el 
+directorio de trabajo
+
+- Un repositorio : donde Git almacena permanentemente esos cambios como diferentes 
+versiones del proyecto.
+
+- El flujo de trabajo de Git consiste en editar archivos en el directorio de trabajo, 
+agregar archivos al área de ensayo y guardar los cambios en un repositorio de Git.
+
+<---- CONTINUACION DE BASE PRINCIPAL DE PASOS ---->
+
+# git init
+
+- La palabra init significa inicializar . El comando configura todas las 
+herramientas que Git necesita para comenzar a rastrear los cambios realizados 
+en el proyecto.
+
+- Crea un nuevo repositorio Git.
+
+
+# git status
+
+El comando status muestra el estado del directorio de trabajo, el área de almacenamiento 
+temporal y qué archivos están rastreados o no.
+
+# git add 
+
+Para que Git comience a rastrear scene-1.txt o algún otro archivo conforme al resultado 
+del <git status>, el archivo debe agregarse al área de preparación.
+
+EXAMPLE: git add filename   <filename> : Nombre del archivo
+
+# git diff : diferencia git
+
+Como el archivo está rastreado, podemos comprobar las diferencias entre el 
+directorio de trabajo y el área de preparación con:
+
+EXAMPLE: git diff filename
+
+# git commit
+
+commit es el último paso en nuestro flujo de trabajo de Git. 
+Una confirmación almacena permanentemente los cambios del área 
+de preparación dentro del repositorio.
+
+Convenciones estándar para mensajes de confirmación:
+
+- Debe estar entre comillas
+- Escrito en tiempo presente
+- Debe ser breve (50 caracteres o menos) cuando se utilice-m
+
+EXAMPLE: git commit -m "Complete first line of dialogue"
+
+# git log
+
+A menudo, con Git, necesitarás consultar una versión anterior 
+de un proyecto. Las confirmaciones se almacenan cronológicamente
+en el repositorio y se pueden ver con:
+
+En la salida, observe:
+
+- Un código de 40 caracteres, denominado SHA , que identifica de 
+forma única la confirmación. Aparece en texto naranja.
+
+- El autor de la confirmación (¡tú!)
+
+- La fecha y hora de la confirmación.
+
+- El mensaje de confirmación
+
+EXAMPLE: git log
