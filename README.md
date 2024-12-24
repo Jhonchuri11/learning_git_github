@@ -53,10 +53,10 @@ Un proyecto Git se compone de tres partes principales:
   git diff scene-1.txt
 ### 5️⃣ git commit
 - **Descripción**: Guarda permanentemente los cambios del área de preparación dentro del repositorio.
-- **Convenciones para mensajes de confirmación**
-- Escribe el mensaje entre comillas.
-- Usa tiempo presente.
-- Sé breve (50 caracteres o menos).
+- **Convenciones para mensajes de confirmación:**
+   - Escribe el mensaje entre comillas.
+   - Usa tiempo presente.
+   - Sé breve (50 caracteres o menos).
 - **Uso**:  
   ```bash
   git commit -m "Mensaje de confirmación"
